@@ -11,7 +11,6 @@ import lombok.NoArgsConstructor;
 @Table(name = "users")
 @Data
 @NoArgsConstructor
-@RequiredArgsConstructor
 public class User {
     
     @Id
@@ -27,4 +26,9 @@ public class User {
     @Email(message = "Email must be valid")
     @Column(nullable = false, unique = true)
     private String email;
+    
+    public User(String name, String email) {
+        this.name = name;
+        this.email = email;
+    }
 }
