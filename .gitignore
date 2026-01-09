@@ -1,0 +1,25 @@
+# Database files
+springBootBackend/data/
+*.db
+*.mv.db
+*.trace.db
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Node modules (already in frontend/.gitignore)
+node_modules/
+
+# Build outputs
+springBootBackend/target/
+frontend/.next/
+frontend/out/
